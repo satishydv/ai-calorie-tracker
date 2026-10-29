@@ -1,0 +1,4 @@
+# Unreviewed drafts with unfilled placeholders — keep them out of search.
+# Delete this file when the docs are final and you want them indexed.
+/*
+  X-Robots-Tag: noindex

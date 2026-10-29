@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bulky AI — Calorie tracking made easy</title>
+    <meta
+      name="description"
+      content="Photograph your plate. Bulky AI estimates the calories and macros and logs them against daily targets built around your goal."
+    />
+    <link rel="icon" href="logo-mark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Store links are placeholders: the app is not published yet. -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <img src="logo-mark.png" alt="" />
+          Bulky AI
+        </a>
+        <div class="nav-links">
+          <a class="link" href="#how">How it works</a>
+          <a class="link" href="#faq">FAQ</a>
+          <a class="link" href="terms.html">Terms</a>
+          <a class="link" href="privacy.html">Privacy</a>
+        </div>
+        <div class="nav-store">
+          <a class="store" href="#" aria-label="Download on the App Store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.05 12.04c-.03-2.9 2.37-4.3 2.48-4.37-1.35-1.98-3.45-2.25-4.2-2.28-1.79-.18-3.49 1.05-4.4 1.05-.91 0-2.31-1.03-3.8-1-1.95.03-3.75 1.13-4.75 2.88-2.03 3.52-.52 8.73 1.46 11.58.97 1.4 2.12 2.96 3.63 2.9 1.46-.06 2.01-.94 3.77-.94 1.76 0 2.26.94 3.8.91 1.57-.03 2.56-1.42 3.52-2.83 1.11-1.62 1.57-3.19 1.6-3.27-.04-.02-3.07-1.18-3.11-4.63z"
+              />
+              <path
+                d="M14.6 3.6c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.74-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.63z"
+              />
+            </svg>
+            <span><small>Download on the</small><b>App Store</b></span>
+          </a>
+          <a class="store" href="#" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="#00d2ff"
+                d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1L13.5 12.1v-.2L3.7 1.7l-.1.1z"
+              />
+              <path
+                fill="#ffce00"
+                d="M16.8 15.4l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2z"
+              />
+              <path fill="#ff3a44" d="M16.9 15.4L13.5 12 3.6 21.9c.4.4 1 .4 1.7.1l11.6-6.6" />
+              <path fill="#00f076" d="M16.9 8.6L5.3 2C4.6 1.6 4 1.7 3.6 2.1L13.5 12l3.4-3.4z" />
+            </svg>
+            <span><small>Get it on</small><b>Google Play</b></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- hero -->
+      <section class="hero wrap">
+        <div class="hero-grid">
+          <div>
+            <span class="chip">
+              <span class="dots">
+                <i style="background: var(--protein)"></i>
+                <i style="background: var(--carbs)"></i>
+                <i style="background: var(--fat)"></i>
+              </span>
+              Free to use · No subscription
+            </span>
+            <h1>Calorie tracking made easy</h1>
+            <p class="lead">
+              Photograph your plate. Bulky AI estimates the calories and macros, and logs them
+              against daily targets built around your body and your goal.
+            </p>
+            <div class="store-row">
+              <a class="store" href="#">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.05 12.04c-.03-2.9 2.37-4.3 2.48-4.37-1.35-1.98-3.45-2.25-4.2-2.28-1.79-.18-3.49 1.05-4.4 1.05-.91 0-2.31-1.03-3.8-1-1.95.03-3.75 1.13-4.75 2.88-2.03 3.52-.52 8.73 1.46 11.58.97 1.4 2.12 2.96 3.63 2.9 1.46-.06 2.01-.94 3.77-.94 1.76 0 2.26.94 3.8.91 1.57-.03 2.56-1.42 3.52-2.83 1.11-1.62 1.57-3.19 1.6-3.27-.04-.02-3.07-1.18-3.11-4.63z"
+                  />
+                  <path
+                    d="M14.6 3.6c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.74-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.63z"
+                  />
+                </svg>
+                <span><small>Download on the</small><b>App Store</b></span>
+              </a>
+              <a class="store" href="#">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="#00d2ff"
+                    d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1L13.5 12.1v-.2L3.7 1.7l-.1.1z"
+                  />
+                  <path
+                    fill="#ffce00"
+                    d="M16.8 15.4l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2z"
+                  />
+                  <path fill="#ff3a44" d="M16.9 15.4L13.5 12 3.6 21.9c.4.4 1 .4 1.7.1l11.6-6.6" />
+                  <path fill="#00f076" d="M16.9 8.6L5.3 2C4.6 1.6 4 1.7 3.6 2.1L13.5 12l3.4-3.4z" />
+                </svg>
+                <span><small>Get it on</small><b>Google Play</b></span>
+              </a>
+            </div>
+            <p class="sub">Sign in with Apple or Google. Delete your account any time.</p>
+          </div>
+
+          <div class="hero-shot">
+            <img src="demo1-hero.png" alt="The Bulky AI home screen showing calories and macros left for the day" />
+          </div>
+        </div>
+      </section>
+
+      <!-- how it works -->
+      <section class="band" id="how">
+        <div class="section wrap">
+          <h2>Three steps, then you're tracking</h2>
+          <p class="kicker">
+            No food database to search, no weighing, no manual entry. Answer nine questions
+            once, then point your camera at dinner.
+          </p>
+          <div class="grid-3">
+            <div class="card">
+              <div class="num">1</div>
+              <h3>Answer nine questions</h3>
+              <p>
+                Your body stats, activity level, goal and diet preference. Bulky AI turns them
+                into a daily calorie target and a protein, carb and fat split.
+              </p>
+            </div>
+            <div class="card">
+              <div class="num">2</div>
+              <h3>Snap your plate</h3>
+              <p>
+                Take a photo, or pick one from your gallery. A vision model reads the meal and
+                estimates what's in it — usually in a few seconds.
+              </p>
+            </div>
+            <div class="card">
+              <div class="num">3</div>
+              <h3>Watch the day fill</h3>
+              <p>
+                Calories and macros left update as you log. Scroll back through previous days
+                to see what you actually ate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- what's included -->
+      <section class="section wrap">
+        <h2>What's inside</h2>
+        <p class="kicker">Everything the app does today — nothing it doesn't.</p>
+        <div class="split">
+          <div class="split-shot">
+            <img src="phone-mockup.png" alt="Bulky AI on a phone" />
+          </div>
+          <div class="rows">
+            <div class="row">
+              <h3>Targets built from your answers</h3>
+              <p>
+                A daily calorie goal plus protein, carbs and fat, generated from your body
+                stats, activity level, weekly pace and diet preference — classic, keto, vegan
+                or vegetarian.
+              </p>
+            </div>
+            <div class="row">
+              <h3>Photo-based meal logging</h3>
+              <p>
+                Camera or gallery. The model names the meal and estimates its calories and
+                macros. If the photo isn't food, it says so and throws the entry away.
+              </p>
+            </div>
+            <div class="row">
+              <h3>Your day at a glance</h3>
+              <p>
+                Calories left, macros left, and every meal you've logged — with a date strip
+                for the past two weeks, in your own timezone.
+              </p>
+            </div>
+            <div class="row">
+              <h3>One-tap account deletion</h3>
+              <p>
+                From the Profile tab. Your photos, your profile, your meal history and your
+                sign-in identity are all erased. No support ticket, no waiting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- honesty -->
+      <section class="band">
+        <div class="section wrap" style="max-width: 820px">
+          <h2>Straight about the numbers</h2>
+          <p class="kicker">
+            Most calorie apps oversell their accuracy. Here's what ours actually is.
+          </p>
+
+          <div class="callout ai plain">
+            <span class="tag">Estimates, not measurements</span>
+            <p>
+              Bulky AI reads a single flat photograph. It can't weigh your food, see under the
+              surface of a dish, or spot the oil in the pan. It infers portion size from the
+              plate and the cutlery — so the figures are estimates, and sometimes they'll be
+              well off. They're useful for spotting a trend across a week, not for hitting a
+              number to the gram.
+            </p>
+          </div>
+
+          <div class="callout plain">
+            <span class="tag">Not medical advice</span>
+            <p>
+              Bulky AI is a general wellness tool, not a medical device, and it isn't a
+              dietitian. It knows nothing about your medical conditions, medications or
+              allergies, because it never asks. Never use it to decide whether a food is safe
+              for an allergy, and talk to a doctor or a registered dietitian before changing
+              how you eat. Full detail in the <a href="terms.html">Terms of Service</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- faq -->
+      <section class="section wrap" id="faq">
+        <h2>Frequently asked questions</h2>
+        <p class="kicker">The honest answers, including the unflattering ones.</p>
+        <div class="faq">
+          <details>
+            <summary>Is Bulky AI free?</summary>
+            <p>
+              Yes. There's no subscription, no in-app purchase and no paid tier. We don't
+              collect payment details. If we ever add paid features we'll show you the price
+              before you buy anything, and nothing already free will move behind a paywall
+              without notice.
+            </p>
+          </details>
+          <details>
+            <summary>How accurate are the calorie numbers?</summary>
+            <p>
+              They're estimates from one photo, and they will sometimes be substantially
+              wrong. The model can't weigh anything or see hidden ingredients, oils or sauces.
+              We do check the daily targets it generates against a sane range and reject
+              nonsense, but an individual meal estimate is exactly that — an estimate.
+            </p>
+          </details>
+          <details>
+            <summary>What happens to my meal photos?</summary>
+            <p>
+              They're stored with our image provider, and a resized copy is sent to OpenAI to
+              be analysed. They're shown back to you in your meal log. We don't publish them,
+              sell them, show them to other users, or use them to train our own models.
+            </p>
+          </details>
+          <details>
+            <summary>Can I correct a meal the AI got wrong?</summary>
+            <p>
+              Not yet. Editing and deleting individual meals isn't built. Today you can log a
+              meal, and you can delete your entire account — nothing in between. It's on the
+              list.
+            </p>
+          </details>
+          <details>
+            <summary>Can I delete my account and my data?</summary>
+            <p>
+              Yes, from the Profile tab, and it's immediate. It erases every meal photo you've
+              uploaded, your profile and targets, your whole meal history and your sign-in
+              identity. It's permanent — there's no recovery period and no way for us to
+              restore it.
+            </p>
+          </details>
+          <details>
+            <summary>How do I sign in?</summary>
+            <p>
+              With Apple or with Google. Those are the only options — we don't issue passwords
+              and there's no email-and-password sign-up.
+            </p>
+          </details>
+          <details>
+            <summary>Does it scan barcodes or search a food database?</summary>
+            <p>
+              No. Photos only. There's no barcode scanner, no food search, no manual entry and
+              no restaurant database. If a photo won't work, Bulky AI won't help you log that
+              meal.
+            </p>
+          </details>
+          <details>
+            <summary>How old do I have to be?</summary>
+            <p>
+              At least 16. The app asks your date of birth to work out your calorie needs, not
+              to check your age — but 16 is the requirement in the
+              <a href="terms.html#s3">Terms of Service</a>.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-cols">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="logo-mark.png" alt="" />
+            Bulky AI
+          </a>
+          <p class="blurb">
+            Photo-based calorie and macro tracking. Free, and straight with you about what the
+            numbers are worth.
+          </p>
+          <div class="store-row">
+            <a class="store" href="#">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.05 12.04c-.03-2.9 2.37-4.3 2.48-4.37-1.35-1.98-3.45-2.25-4.2-2.28-1.79-.18-3.49 1.05-4.4 1.05-.91 0-2.31-1.03-3.8-1-1.95.03-3.75 1.13-4.75 2.88-2.03 3.52-.52 8.73 1.46 11.58.97 1.4 2.12 2.96 3.63 2.9 1.46-.06 2.01-.94 3.77-.94 1.76 0 2.26.94 3.8.91 1.57-.03 2.56-1.42 3.52-2.83 1.11-1.62 1.57-3.19 1.6-3.27-.04-.02-3.07-1.18-3.11-4.63z"
+                />
+                <path
+                  d="M14.6 3.6c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.74-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.63z"
+                />
+              </svg>
+              <span><small>Download on the</small><b>App Store</b></span>
+            </a>
+            <a class="store" href="#">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="#00d2ff"
+                  d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1L13.5 12.1v-.2L3.7 1.7l-.1.1z"
+                />
+                <path
+                  fill="#ffce00"
+                  d="M16.8 15.4l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2z"
+                />
+                <path fill="#ff3a44" d="M16.9 15.4L13.5 12 3.6 21.9c.4.4 1 .4 1.7.1l11.6-6.6" />
+                <path fill="#00f076" d="M16.9 8.6L5.3 2C4.6 1.6 4 1.7 3.6 2.1L13.5 12l3.4-3.4z" />
+              </svg>
+              <span><small>Get it on</small><b>Google Play</b></span>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html#s13">Delete your data</a></li>
+            <li><a href="terms.html#s9">Third-party services</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="mailto:">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span class="copy">© 2026 Bulky AI. All rights reserved.</span>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+  </body>
+</html>

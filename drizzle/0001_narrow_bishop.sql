@@ -1,0 +1,1 @@
+ALTER TYPE "public"."activity_level" ADD VALUE 'extra';
